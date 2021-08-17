@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Says</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <h1 class="primary-title">
+      David Says
+    </h1>
+  </header>
+  <main>
+    <article class="game-control">
+      <div class="game-control__rules">
+        <h2 class="secondary-title">
+          Rules of the Game!
+        </h2>
+        <p class="game-control__rules-text">
+          This is a re-imagining of the classic game of 'Simon Says'. If you're an 80's (or even 90's kid)
+          you may remember some version of this game. Essentially when you start, the window to the right 
+          will begin playing a sequence of buttons and audio, it is your job to remember their order and repeat
+          them - try and see how many points you can accumulate!
+        </p>
+      </div>
+      <button class="game-control__start">Start Game</button>
+    </article>
+    <section class="game-window">
+      <label for="" class="game-window__points-label">Points:
+        <input type="number" disabled class="game-window__points" value=0>
+      </label>
+      </input>
+      <button class="game-window__btn --up" data-direction="ArrowUp">
+        ⇧
+      </button>
+      <div class="game-window__lower-buttons">
+        <button class="game-window__btn --left" data-direction="ArrowLeft">
+          ⇦
+        </button>
+        <button class="game-window__btn --down" data-direction="ArrowDown">
+          ⇩
+        </button>
+        <button class="game-window__btn --right" data-direction="ArrowRight">
+          ⇨
+        </button>
+      </div>
+      <h4 class="game-window__keypress">Up!</h4>
+    </section>
+    <aside class="recent-scores">
+      <h3 class="recent-scores__title">Recent Scores:</h3>
+      <ul class="recent-scores__list">
+      </ul>
+    </aside>
+  </main>
+  <audio src="./assets/audio/audio-computer-sound.mp3" class="audio-computer-sound" data-track="computer-sound"></audio>
+  <audio src="./assets/audio/audio-electric-guitar.mp3" class="audio-electric-guitar" data-track="electric-guitar"></audio>
+  <audio src="./assets/audio/audio-telephone.mp3" class="audio-telephone" data-track="telephone"></audio>
+  <audio src="./assets/audio/audio-twinke-echo.mp3" class="audio-twinke-echo" data-track="twinke-echo"></audio>
+  <audio src="./assets/audio/sound-effect-nice.mp3" class="sound-effect-nice" data-track="nice"></audio>
+  <audio src="./assets/audio/sound-effect-way-to-go.mp3" class="sound-effect-way-to-go" data-track="way-to-go"></audio>
+  <audio src="./assets/audio/sound-effect-all-right.mp3" class="sound-effect-all-right" data-track="all-right"></audio>
+  <audio src="./assets/audio/sound-effect-game-over.mp3" class="sound-effect-game-over" data-track="game-over"></audio>
+  <audio src="./assets/audio/sound-effect-try-again.mp3" class="sound-effect-try-again" data-track="try-again"></audio>
+  <audio src="./assets/audio/sound-effect-applause.mp3" class="sound-effect-applause" data-track="applause"></audio>
+  <audio src="./assets/audio/background-track-exploration.mp3" class="audio-background" data-track="background" loop></audio>
+  <script src="./audioControls.js">  </script>
+  <script src="./script.js">  </script>
+</body>
+</html>
